@@ -18,18 +18,10 @@ public class UseAccount {
 		yourAccount.address = "111 testitie";
 		yourAccount.balance = 55.63;
 		
-		out.print(myAccount.name);
-		out.print(" (");
-		out.print(myAccount.address);
-		out.print(") has $");
-		out.print(myAccount.balance);
-		out.println();
+		myAccount.display();
+		System.out.println();
+		yourAccount.display();
 		
-		out.print(yourAccount.name);
-		out.print(" (");
-		out.print(yourAccount.address);
-		out.print(") has $");
-		out.print(yourAccount.balance);
-		out.println();
+		
 	}
 }

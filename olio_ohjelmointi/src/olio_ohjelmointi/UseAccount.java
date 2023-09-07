@@ -19,7 +19,10 @@ public class UseAccount {
 		yourAccount.balance = 55.63;
 		
 		myAccount.display();
+		out.print(" plus $");
+		out.print(myAccount.getInterest(5.00));
 		System.out.println();
+		
 		yourAccount.display();
 		
 		

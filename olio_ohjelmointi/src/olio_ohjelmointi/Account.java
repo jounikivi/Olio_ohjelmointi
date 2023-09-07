@@ -15,4 +15,8 @@ public class Account {
 		out.print(balance);
 	}
 	
+	public double getInterest(double percentageRate) {
+		return balance * percentageRate / 100.00;
+	}
+	
 }

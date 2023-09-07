@@ -21,9 +21,14 @@ public class UseAccount {
 		myAccount.display();
 		out.print(" plus $");
 		out.print(myAccount.getInterest(5.00));
-		System.out.println();
+		out.println(" interst ");
 		
 		yourAccount.display();
+		double yourInterestRate= 7.00;
+		out.print(" plus $");
+		double yourInterstAmount = yourAccount.getInterest(yourInterestRate);
+		out.print(yourInterstAmount);
+		out.println(" interst ");
 		
 		
 	}

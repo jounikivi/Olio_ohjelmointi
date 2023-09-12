@@ -16,5 +16,11 @@ public class Organization {
         System.out.println("Vuosittainen tulo: $" + vuosittainenTulo);
         System.out.println("Voittoa tavoitteleva: " + (voittoaTavoitteleva ? "Kyllä" : "Ei"));
     }
+    
+    public void displayInfo() {
+    	System.out.println("Organisaation nimi: " + nimi);
+    	System.out.println("Vuosittainen tulo: $" + vuosittainenTulo);
+    	System.out.println("Voittoa tavoitteleva: "+ (voittoaTavoitteleva ? "Kyllä" : "Ei"));
+    }
 }
 

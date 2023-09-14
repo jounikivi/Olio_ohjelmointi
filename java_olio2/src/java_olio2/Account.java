@@ -1,4 +1,4 @@
-package olio_ohjelmointi;
+package java_olio2;
 
 import static java.lang.System.out;
 

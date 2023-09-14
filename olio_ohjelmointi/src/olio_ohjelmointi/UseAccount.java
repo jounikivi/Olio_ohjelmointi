@@ -10,13 +10,13 @@ public class UseAccount {
         myAccount = new Account();
         yourAccount = new Account();
 
-        myAccount.name = "Barry Burd";
-        myAccount.address = "222 testikatu";
-        myAccount.balance = 24.02;
+        myAccount.setName("Barry Burd");
+        myAccount.setAddress("222 testikatu");
+        myAccount.setBalance(24.02);
 
-        yourAccount.name = "Jane Q. Public";
-        yourAccount.address = "111 testitie";
-        yourAccount.balance = 55.63;
+        yourAccount.setName("Jane Q. Public");
+        yourAccount.setAddress("111 testitie");
+        yourAccount.setBalance(55.63);
 
         System.out.print("Account details: ");
         myAccount.display();

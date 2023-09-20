@@ -1,4 +1,4 @@
-package java_olio2;
+package viikko2;
 
 import static java.lang.System.out;
 

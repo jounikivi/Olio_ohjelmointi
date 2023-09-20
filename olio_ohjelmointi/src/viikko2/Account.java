@@ -1,47 +1,48 @@
 package viikko2;
 
-import static java.lang.System.out;
-
 public class Account {
-	
-	private String name;
-	private String address;
-	private Double balance;
-	
-	public void display() {
-		out.print(getName());
-		out.print("(");
-		out.print(getAddress());
-		out.print(") has $");
-		out.print(getBalance());
-	}
-	
-	public double getInterest(double percentageRate) {
-		return getBalance() * percentageRate / 100.00;
-	}
 
-	public Double getBalance() {
-		return balance;
-	}
+	 // Käytetään private-määrettä, jotta muuttujia ei voi suoraan muuttaa ulkopuolelta
+    private String name;
+    private String address;
+    private double balance;
 
-	public void setBalance(Double balance) {
-		this.balance = balance;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public String getAddress() {
-		return address;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setAddress(String address) {
-		this.address = address;
-	}
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getAddress() {
+        return address;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
-	
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void display() {
+        System.out.print(name);
+        System.out.print(" (");
+        System.out.print(address);
+        System.out.print(") has $");
+        System.out.print(balance);
+    }
+
+    public double getInterest(double percentageRate) {
+        return balance * percentageRate / 100.00;
+    }
 }
+
+
+	

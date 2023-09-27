@@ -16,4 +16,8 @@ class MySubThing extends MyThing {
 }
 
 class MyOtherThing extends MyThing {
+    @Override
+    public void display() {
+        System.out.println("In MyOtherThing, value is " + value);
+    }
 }

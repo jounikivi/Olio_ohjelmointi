@@ -5,8 +5,8 @@ public class DisplayThePlaces2 {
 	  public static void main(String[] args) {
 
 	    // Luodaan asuinpaikkoja
-	    PlaceToLive house = new PlaceToLive("Kotikatu 12", 3, 120);
-	    PlaceToLive apartment = new PlaceToLive("Asuntokatu 23", 2, 70);
+	    PlaceToLive2 house = new PlaceToLive2("Kotikatu 12", 3, 120);
+	    PlaceToLive2 apartment = new PlaceToLive2("Asuntokatu 23", 2, 70);
 
 	    // Näytetään tietoja asuinpaikoista
 	    System.out.println("** Asunto 1 **");

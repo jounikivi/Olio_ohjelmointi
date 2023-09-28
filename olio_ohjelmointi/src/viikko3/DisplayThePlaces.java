@@ -50,3 +50,4 @@ public class DisplayThePlaces {
         System.out.println("Hinta per makuuhuone: " + place.calculatePricePerBedroom(cost) + " euroa/makuuhuone");
     }
 }
+

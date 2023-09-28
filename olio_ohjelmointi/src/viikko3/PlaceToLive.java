@@ -1,7 +1,10 @@
 package viikko3;
 
-import java.util.Scanner;
-import java.util.Locale;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 class PlaceToLive {
     private String address;
@@ -14,17 +17,7 @@ class PlaceToLive {
         this.area = area;
     }
 
-    public double calculatePricePerSquareFoot(double cost) {
-        return cost / area;
-    }
-
-    public double calculatePricePerBedroom(double cost) {
-        return cost / numberOfBedrooms;
-    }
-
-    public String getAddress() {
-        return address;
-    }
+    // Lisää tarvittavat getterit ja laskentametodit tähän
 
     @Override
     public String toString() {
@@ -35,6 +28,9 @@ class PlaceToLive {
                 '}';
     }
 }
+
+
+
 
 
 

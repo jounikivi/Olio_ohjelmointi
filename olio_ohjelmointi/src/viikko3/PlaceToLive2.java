@@ -1,30 +1,40 @@
 package viikko3;
 
-public class PlaceToLive2 {
-	private String address;
-	private int numberOfBedrooms;
-	private double area;
-	
-	public PlaceToLive2(String address, int numberOfBedrooms, double area) {
-	this.address = address;
-	this.numberOfBedrooms = numberOfBedrooms;
-	this.area = area;
-	}
-	public String getAddress() {
-		return address;
-	}
-	public int getNumberOfBedrooms() {
-		return numberOfBedrooms;
-	}
+import java.util.Scanner;
+import java.util.Locale;
 
-	public double getArea() {
-		return area;
-	}
-	public void displayInfo() {
-	    System.out.println("Address: " + address);
-	    System.out.println("Number of Bedrooms: " + numberOfBedrooms);
-	    System.out.println("Area: " + area + " square meters");
-	}
+class PlaceToLive2 {
+    private String address;
+    private int numberOfBedrooms;
+    private double area;
 
+    public PlaceToLive2(String address, int numberOfBedrooms, double area) {
+        this.address = address;
+        this.numberOfBedrooms = numberOfBedrooms;
+        this.area = area;
+    }
+
+    public double calculatePricePerSquareFoot(double cost) {
+        return cost / area;
+    }
+
+    public double calculatePricePerBedroom(double cost) {
+        return cost / numberOfBedrooms;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    @Override
+    public String toString() {
+        return "PlaceToLive{" +
+                "address='" + address + '\'' +
+                ", numberOfBedrooms=" + numberOfBedrooms +
+                ", area=" + area +
+                '}';
+    }
 }
+
+
 

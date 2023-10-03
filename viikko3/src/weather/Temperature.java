@@ -4,16 +4,18 @@ public class Temperature {
     private double number;
     private TempScale scale;
 
+    public Temperature() {
+        number = 0.0;
+        scale = TempScale.FAHRENHEIT;
+    }
 
-
-    // Constructors
     public Temperature(double number) {
         this.number = number;
-        this.scale = TempScale.FAHRENHEIT;
+        scale = TempScale.FAHRENHEIT;
     }
 
     public Temperature(TempScale scale) {
-        this.number = 0.0;
+        number = 0.0;
         this.scale = scale;
     }
 
@@ -22,12 +24,6 @@ public class Temperature {
         this.scale = scale;
     }
 
-    public Temperature() {
-        this.number = 0.0;
-        this.scale = TempScale.FAHRENHEIT;
-    }
-
-    // Getter and Setter methods
     public void setNumber(double number) {
         this.number = number;
     }
@@ -43,11 +39,4 @@ public class Temperature {
     public TempScale getScale() {
         return scale;
     }
-
-    @Override
-    public String toString() {
-        return number + " " + scale;
-    }
 }
-
-

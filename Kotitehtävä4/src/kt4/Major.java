@@ -5,5 +5,6 @@ public enum Major {
     MATHEMATICS,
     LITERATURE,
     PHYSICS,
-    HISTORY
+    HISTORY,
+    BIOLOGY
 }

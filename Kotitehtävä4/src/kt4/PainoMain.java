@@ -2,9 +2,9 @@ package kt4;
 
 public class PainoMain {
 	public static void main(String[] args) {
-		Henkilo Pekka = new Henkilo("Pekka");
-		Pekka.setPituus(175);
-		Pekka.setPaino(95);
-		Pekka.display();
+		Henkilo Matti = new Henkilo("Pekka");
+		Matti.setPituus(186);
+		Matti.setPaino(86);
+		Matti.display();
 	}
 }

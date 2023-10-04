@@ -21,7 +21,7 @@ public class Henkilo {
     
     public double painoindeksi() {
         if (pituus <= 0 || paino <= 0) {
-            return 0; n
+            return 0; 
         }
         double pituusMetreina = pituus / 100.0; 
         return paino / (pituusMetreina * pituusMetreina);

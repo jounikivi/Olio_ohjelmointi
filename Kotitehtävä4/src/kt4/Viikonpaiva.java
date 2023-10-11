@@ -1,4 +1,4 @@
-package kt4;
+/*package kt4;
 
 public enum Viikonpaiva {
 	MAANTAIN,
@@ -12,4 +12,4 @@ public enum Viikonpaiva {
 
 //Luodaan muuttuja tanaan ja asetetaan siihen enum-arvo Viikonpaiva.TIISTAI,
 //joka edustaa tiistaita.
-Viikonpaiva tanaan = Viikonpaiva.TIISTAI;
+Viikonpaiva tanaan = Viikonpaiva.TIISTAI;*/

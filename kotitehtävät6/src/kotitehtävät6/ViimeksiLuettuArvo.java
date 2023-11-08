@@ -1,33 +1,39 @@
 package kotitehtävät6;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 public class ViimeksiLuettuArvo {
     public static void main(String[] args) {
+        // Luodaan ArrayList syötteiden tallentamiseksi
         ArrayList<String> syotteet = new ArrayList<>();
+        
+        // Luodaan Scanner syötteiden lukemiseen käyttäjältä
         Scanner lukija = new Scanner(System.in);
         
+        // Kysytään käyttäjältä syötteitä ja lisätään ne ArrayListiin
         while (true) {
             System.out.print("Syötä teksti (tyhjä lopettaa): ");
             String syote = lukija.nextLine();
             
+            // Tarkistetaan, onko syöte tyhjä
             if (syote.isEmpty()) {
-                break;
+                break; // Lopetetaan syötteiden lukeminen, jos syöte on tyhjä
             }
             
-            syotteet.add(syote);
+            syotteet.add(syote); // Lisätään syöte ArrayListiin
         }
         
-        lukija.close();
+        lukija.close(); // Suljetaan Scanner
         
-        if (!syotteet.isEmpty()) {
-            int viimeisenIndeksi = syotteet.size() - 1;
-            String viimeinenSyote = syotteet.get(viimeisenIndeksi);
+        int koko = syotteet.size();
+        if (koko > 0) {
+            // Haetaan viimeinen syöte ArrayListista
+            String viimeinenSyote = syotteet.get(koko - 1);
+            
+            // Tulostetaan viimeksi luettu arvo
             System.out.println("Viimeksi luettu arvo: " + viimeinenSyote);
         } else {
             System.out.println("Et antanut syötteitä.");
         }
     }
 }
-

@@ -1,5 +1,5 @@
 package javaharjoitus;
 
-public class Square {
-
+public class Square extends implements Area{
+	
 }
